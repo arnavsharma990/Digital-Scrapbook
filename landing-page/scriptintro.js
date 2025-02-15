@@ -5,12 +5,12 @@ const introContainer = document.getElementById("intro");
 const landingPage = document.getElementById("landing");
 
 function typeWriterEffect(text, i, callback) {
-    if (i === 0) textElement.innerHTML = ""; // Clear previous text
+    if (i === 0) textElement.innerHTML = ""; 
     if (i < text.length) {
         textElement.innerHTML += text.charAt(i);
-        setTimeout(() => typeWriterEffect(text, i + 1, callback), 35); // Increased typing delay for better readability
+        setTimeout(() => typeWriterEffect(text, i + 1, callback), 35); 
     } else {
-        setTimeout(callback, 600); // Increased delay before fading out
+        setTimeout(callback, 600);
     }
 }
 
@@ -28,8 +28,8 @@ function showText() {
                     } else {
                         transitionToLanding();
                     }
-                }, 100); // Increased transition delay between texts
-            }, 300); // Increased display time before fading
+                }, 100); 
+            }, 300); 
         });
     }
 }
@@ -41,7 +41,7 @@ function transitionToLanding() {
     setTimeout(() => {
         landingPage.style.opacity = "1";
         landingPage.style.transform = "translateY(0)";
-    }, 800); // Delay to start fade-in after rise transition
+    }, 800); 
 }
 
-setTimeout(showText, 300); // Increased initial delay
+setTimeout(showText, 300); 

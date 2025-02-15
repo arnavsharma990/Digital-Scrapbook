@@ -22,18 +22,18 @@ body {
 
 .text {
     opacity: 1;
-    animation: rise 0.4s forwards; /* Increased animation duration */
+    animation: rise 0.4s forwards; 
     white-space: nowrap;
 }
 
 @keyframes rise {
-    from { transform: translateY(15px); opacity: 0; } /* Increased translateY for smoother animation */
+    from { transform: translateY(15px); opacity: 0; } 
     to { transform: translateY(0); opacity: 1; }
 }
 
 .landing-page {
     text-align: center;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transform: translateY(30px);
     transition: transform 0.8s ease-out, opacity 1s ease-in;
 }

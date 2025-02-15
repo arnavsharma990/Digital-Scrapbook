@@ -3,6 +3,7 @@
     margin:0;
     font-family: "Poppins";
 }
+
 body{
     background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(169,150,200,1) 65%, rgba(52,9,121,1) 100%);
     background-repeat:no-repeat;
@@ -13,7 +14,6 @@ a{
 .navbar{
     width:100%;
     height : 5rem;
-    /* background-color: rgb(89, 22, 161); */
     display: inline-block;
 }
 .carousel {
@@ -21,20 +21,19 @@ a{
     width: 90%; 
     margin: auto;
     border-radius: 20px;
-    /* border : 3.5px solid rgb(89, 22, 161); */
     padding-top: 5px;
     box-shadow : #6100ff 0px 5px 15px;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    
   }
   
   .carousel-track {
     display: flex;
     animation: scroll 15s linear infinite;
-    width: calc(300px * 4); /* number of slides */
+    width: calc(300px * 4); 
   }
   
   .carousel-slide {
-    flex: 0 0 300px; /* Width of each slide */
+    flex: 0 0 300px;
   }
   
   .carousel-slide img {

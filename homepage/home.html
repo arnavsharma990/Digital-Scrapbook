@@ -5,217 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrapbook</title>
     <link rel="stylesheet" href="home.css">
-    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="style.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        /* General styles */
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            animation: fadeInBody 15s ease-out;
-        }
-
-        header {
-            position: sticky;
-            top: 0px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 10px;
-            background-color: rgb(19, 10, 19);
-            border-bottom: 1px solid #ddd;
-            z-index: 1000; /* Ensure header stays on top */
-        }
-
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 5px;
-            color: white;
-        }
-
-        .button-container button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.2s ease; /* Smooth transition for scaling */
-        }
-
-        .button-container button img {
-            width: 25px;
-            height: 25px;
-        }
-
-        form {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-left: auto;
-        }
-
-        .search-button {
-            background: none;
-            border: 2px solid purple;
-            border-radius: 50%;
-            padding: 5px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 30px;
-            height: 30px;
-        }
-
-        .search-button img {
-            width: 25px;
-            height: 25px;
-        }
-
-        .search-button:hover {
-            background-color: rgba(128, 0, 128, 0.1);
-        }
-
-        form label {
-            display: none;
-        }
-
-        form input {
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-            max-width: 1500px;
-            margin: 0 auto;
-        }
-
-        /* Updated .box styles */
-        .box {
-            width: 300px;
-            height: 244px;
-            margin: 10px;
-            border-radius: 7.5%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            overflow: hidden; /* Ensure images don't overflow the box */
-            position: relative; /* For positioning child elements */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-        }
-
-        /* Styles for images inside .box */
-        .box img {
-            width: 100%; /* Make the image fill the box */
-            height: 100%; /* Make the image fill the box */
-            object-fit: cover; /* Ensure the image covers the box without distortion */
-            border-radius: 7.5%; /* Match the box's border radius */
-        }
-
-        .search-button:hover {
-            background-color: rgba(161, 123, 42, 0.1);
-            animation: rotateSearch 0.5s ease;
-        }
-
-        @keyframes rotateSearch {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Profile Section Styles */
-        .profile-section {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-left: 20px; /* Add some spacing between search and profile */
-        }
-
-        .profile-section img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%; /* Make the profile image round */
-            border: 2px solid purple; /* Add a purple border */
-        }
-
-        .profile-section span {
-            font-size: 14px;
-            font-weight: bold;
-            color: white;
-        }
-
-        /* Pop-in Animation for Apps Button */
-        @keyframes popIn {
-            0% {
-                transform: scale(0.8); /* Start smaller */
-                opacity: 0.7; /* Start slightly transparent */
-            }
-            50% {
-                transform: scale(1.2); /* Scale up */
-                opacity: 1; /* Fully visible */
-            }
-            100% {
-                transform: scale(1); /* Return to normal size */
-            }
-        }
-
-        /* Hover effect for Apps Button */
-        #apps-button:hover {
-            animation: popIn 0.3s ease-out; /* Trigger animation on hover */
-        }
-        #home-button:hover {
-            animation: popIn 0.3s ease-out; /* Trigger animation on hover */
-        }
-        #folder-button:hover {
-            animation: popIn 0.3s ease-out; /* Trigger animation on hover */
-        }
-        #template-button:hover {
-            animation: popIn 0.3s ease-out; /* Trigger animation on hover */
-        }
-        #logo {
-            transform: translate(440px, 0px);
-        }
-        .styled-button {
-            display: inline-block; 
-            margin: 20px;
-            padding: 15px 30px; 
-            font-size: 25px;
-            color: white;
-            background-color: purple; 
-            border: 2px solid white; 
-            border-radius: 10px; 
-            text-decoration: none; 
-           
-            transition: all 0.3s ease; 
-            -webkit-text-stroke-width: 0.7px; 
-            -webkit-text-stroke-color: black; 
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 1); 
-        }
-
-        .styled-button:hover {
-            background-color:rgba(161, 123, 42, 0.1); 
-            transform: translateY(-2px); 
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 1); 
-        }
-    </style>
 </head>
 <body>
     <header>
-        <!-- Home button -->
+       
         <div class="button-container">
             <button id="home-button">
                 <img src="../assets/plot.png" alt="Home">
@@ -223,7 +19,6 @@
             <span>Home</span>
         </div>
 
-        <!-- Folder button -->
         <div class="button-container">
             <button id="folder-button">
                 <img src="../assets/folder[1].png" alt="Folder">
@@ -231,7 +26,7 @@
             <span>Folder</span>
         </div>
 
-        <!-- Template button -->
+    
         <div class="button-container">
             <button id="template-button">
                 <img src="../assets/template.png" alt="Template">
@@ -239,9 +34,9 @@
             <span>Template</span>
         </div>
 
-        <!-- Apps button -->
+    
         <div class="button-container">
-            <button id="apps-button"> <!-- Added ID for the Apps button -->
+            <button id="apps-button"> 
                 <img src="../assets/image.png" alt="more">
             </button>
             <span>More</span>
@@ -249,7 +44,7 @@
         
         <img id="logo" src="../assets/WhatsApp Image 2025-02-15 at 13.23.13_03cfa359.jpg" width="60" height="60">
         
-        <!-- Search form -->
+
         <form role="search" aria-label="Site">
             <label for="search">Search Scrapbook</label>
             <input id="search" type="text" placeholder="Search Scrapbook">
@@ -258,10 +53,10 @@
             </button>
         </form>
 
-        <!-- Profile Section -->
+    
         <div class="profile-section">
             <img src="../assets/WhatsApp Image 2025-02-15 at 16.50.42_435f9cfc.jpg" alt="Profile">
-            <span>Guest</span> <!-- Replace with the user's name -->
+            <span>Guest</span>
         </div>
     </header>
     <br><br>
@@ -302,7 +97,6 @@
         <a class="box" href="#"><img src="../assets/tmkc10.png"></a>
     </div>
 
-    <!-- AOS Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="home.js"></script>
     

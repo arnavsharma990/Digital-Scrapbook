@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     background: linear-gradient(rgb(147, 63, 236) 0%, rgb(108, 32, 189) 100%);
@@ -6,10 +5,7 @@ body {
     font-weight: bold;
     font-family: "Permanent Marker", serif;
 }
-
-
 .mainhead { overflow-y: hidden; }
-
 .navbarlist {
     list-style-type: none;
     display: flex;
@@ -326,52 +322,6 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
-
-
-@media (max-width: 1024px) {
-    .navbarlist {
-        gap: 40px;
-        font-size: 25px;
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 40px;
-    }
-
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .navbarlist {
-        display: none;
-    }
-
-    .auth-buttons {
-        right: 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 3rem;
-    }
-
-    .feature-grid,
-    .testimonial-grid,
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 .fade-in {
     opacity: 0;

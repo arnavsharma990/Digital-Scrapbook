@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         once: false,
         mirror: true
     });
-
+    
     const loadingOverlay = document.createElement('div');
     loadingOverlay.className = 'loading-overlay';
     loadingOverlay.innerHTML = '<div class="loading-spinner"></div>';
@@ -68,13 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     });
 
-    const pricingCards = document.querySelectorAll('.pricing-card');
-    pricingCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            pricingCards.forEach(c => c.classList.remove('featured'));
-            card.classList.add('featured');
-        });
-    });
 
     const heroText = document.querySelector('.hero-content h1');
     const originalText = heroText.textContent;

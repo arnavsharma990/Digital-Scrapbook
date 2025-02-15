@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(rgb(87, 20, 158) 0%, rgb(63, 16, 114) 100%);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+/* Main Title */
+.main-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.Pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+   
+  align-items: center; 
+  gap: 40px; 
+  width: 100%;
+  padding: 50px 0;
+}
+
+/* Individual Plan Cards */
+.plan-free{
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px; 
+}
+
+
+.plan-pro {
+
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px; 
+}
+
+
+.plan h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+.plan p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.plan ul li {
+  margin: 8px 0;
+}
+
+
+button {
+  background: #ffcc00;
+  border: none;
+  color: black;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #ffc107;
+}
+
+
+.faq {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.faq h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.faq-item details {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 15px auto;
+  width: 60%;
+  border-radius: 8px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  color: #ffcc00;
+  font-size: 16px;
+}
+
+summary:hover {
+  color: #ffc107;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+.plan-business{
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px; 
+}
+
+.plan-free:hover{
+  border:2px solid #ffc107;
+  border-radius: 10px ;
+
+}
+.plan-pro:hover{
+  border:2px solid #ffc107;
+  border-radius: 10px ;
+  
+}
+.plan-business:hover{
+  border:2px solid #ffc107;
+  border-radius: 10px ;
+  
+}

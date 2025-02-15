@@ -4,8 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital ScrapBook</title>
+    <link rel="stylesheet" href="stylesforindex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="scriptforindex.js"></script>
 </head>
 <body>
-    
+    <div class="navbar">
+        <header class="mainhead">
+            <nav>
+                <img width="100px" height="60px" class="logoinnav" src="/assets/logo.png" alt="logo">
+                <ul class="navbarlist">
+                    <a class="navitem" href="home.html"><li>Home</li></a>
+                    <a class="navitem" href="templates.html"><li>Templates</li></a>
+                    <a class="navitem" href="pricing.html"><li>Pricing</li></a>
+                    <a class="navitem navitem1" href="contact.html"><li>Contact Us</li></a>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="register-btn">Get Started Free</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Create Beautiful Digital Memories</h1>
+            <p>Transform your precious moments into stunning digital scrapbooks</p>
+            <button class="cta-button">Start Creating Now</button>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+            <img src="/assets/image1.jpg" width="400px" alt="Scrapbook Preview">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 data-aos="fade-up">Why Choose Digital ScrapBook?</h2>
+        <div class="feature-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">📱</div>
+                <h3>Easy to Use</h3>
+                <p>Intuitive drag-and-drop interface for seamless creation</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">🎨</div>
+                <h3>1000+ Templates</h3>
+                <p>Professional designs for every occasion</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">💫</div>
+                <h3>Custom Effects</h3>
+                <p>Add stunning animations and transitions</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="templates">
+        <h2 data-aos="fade-up">Popular Templates</h2>
+        <div class="template-slider">
+            <div class="template-card" data-aos="fade-right">
+                <img src="/assets/image2.jpg" alt="Template 1">
+                <h3>Wedding Stories</h3>
+            </div>
+            <div class="template-card" data-aos="fade-right" data-aos-delay="100">
+                <img src="/assets/image3.jpg" alt="Template 2">
+                <h3>Travel Diaries</h3>
+            </div>
+            <div class="template-card" data-aos="fade-right" data-aos-delay="200">
+                <img src="/assets/digital-scrapbook-templates_24c.jpg" alt="Template 3">
+                <h3>Family Albums</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 data-aos="fade-up">What Our Users Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card" data-aos="fade-up">
+                <p>"The perfect way to preserve our wedding memories!"</p>
+                <div class="user">- Sarah Johnson</div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <p>"Easy to use and beautiful results every time."</p>
+                <div class="user">- Mike Peters</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2 data-aos="fade-up">Choose Your Plan</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card" data-aos="fade-up">
+                <h3>Free</h3>
+                <div class="price">$0</div>
+                <ul>
+                    <li>5 Scrapbooks</li>
+                    <li>Basic Templates</li>
+                    <li>Standard Effects</li>
+                </ul>
+                <button class="pricing-btn">Start Free</button>
+            </div>
+            <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                <h3>Pro</h3>
+                <div class="price">$9.99/mo</div>
+                <ul>
+                    <li>Unlimited Scrapbooks</li>
+                    <li>Premium Templates</li>
+                    <li>Advanced Effects</li>
+                </ul>
+                <button class="pricing-btn">Go Pro</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Digital ScrapBook</h3>
+                <p>Create, Share, Remember</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Digital ScrapBook. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

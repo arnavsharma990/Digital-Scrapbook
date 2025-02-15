@@ -1,10 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-        duration: 800,
-        offset: 100,
-        once: false,
-        mirror: true
-    });
+    AOS.init({ duration: 800, offset: 100, once: false, mirror: true });
     
     const loadingOverlay = document.createElement('div');
     loadingOverlay.className = 'loading-overlay';
@@ -13,44 +8,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('load', () => {
         loadingOverlay.style.opacity = '0';
-        setTimeout(() => {
-            loadingOverlay.remove();
-        }, 500);
+        setTimeout(() => loadingOverlay.remove(), 500);
     });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     });
 
     const templateSlider = document.querySelector('.template-slider');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
+    let isDown = false, startX, scrollLeft;
+    
     templateSlider.addEventListener('mousedown', (e) => {
         isDown = true;
         startX = e.pageX - templateSlider.offsetLeft;
         scrollLeft = templateSlider.scrollLeft;
     });
-
-    templateSlider.addEventListener('mouseleave', () => isDown = false);
-    templateSlider.addEventListener('mouseup', () => isDown = false);
-
+    
+    ['mouseleave', 'mouseup'].forEach(event => templateSlider.addEventListener(event, () => isDown = false));
+    
     templateSlider.addEventListener('mousemove', (e) => {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - templateSlider.offsetLeft;
-        const walk = (x - startX) * 2;
-        templateSlider.scrollLeft = scrollLeft - walk;
+        templateSlider.scrollLeft = scrollLeft - (x - startX) * 2;
     });
 
     let lastScroll = 0;
@@ -58,16 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
-        if (currentScroll <= 0) {
-            navbar.style.transform = 'translateY(0)';
-            return;
-        }
-        
         navbar.style.transform = currentScroll > lastScroll ? 'translateY(-100%)' : 'translateY(0)';
         lastScroll = currentScroll;
     });
-
 
     const heroText = document.querySelector('.hero-content h1');
     const originalText = heroText.textContent;
@@ -92,4 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     observer.observe(heroText);
+    
+    setTimeout(() => {
+        document.getElementById("preloader").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("main-content").style.display = "block";
+            AOS.init();
+        }, 350);
+    }, 3000);
 });

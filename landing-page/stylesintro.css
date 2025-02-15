@@ -1,0 +1,39 @@
+body {
+    background-color: #0d0110;
+    color: #ece6e6;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.intro-container {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.8s ease-out, opacity 0.5s ease-out;
+}
+
+.text {
+    opacity: 1;
+    animation: rise 0.4s forwards; /* Increased animation duration */
+    white-space: nowrap;
+}
+
+@keyframes rise {
+    from { transform: translateY(15px); opacity: 0; } /* Increased translateY for smoother animation */
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.landing-page {
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px);
+    transition: transform 0.8s ease-out, opacity 1s ease-in;
+}

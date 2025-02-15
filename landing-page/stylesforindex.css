@@ -37,12 +37,11 @@ nav ul li {
 }
 
 .logoinnav {
-    border-radius: 20px;
-    margin-left: 21px;
+    border-radius: 50px;
+    margin-left: -1px;
     position: relative;
-    top: -6px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    top: -5px;
+   
 }
 
 .navitem {

@@ -4,20 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScrapBook</title>
-    <link rel="stylesheet" href="canva-clone/styles-for-canvas.css">
-    <link rel="icon" type="image/x-icon" href="assets/logo.jpg">
-
+    <title>Canva Clone</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
 </head>
 
 <body>
     <div class="sidebar">
         <h1 class="heading">Templates</h1>
-<p class="redi" onclick="redirect(this)" data-title="MEMORIES">MEMORIES ❤️</p>
-<p class="redi" onclick="redirect(this)" data-title="STORIES">STORIES 😊</p>
-<p class="redi" onclick="redirect(this)" data-title="ADVENTURE">ADVENTURE 🚀</p>
-
+        <p class="redi" onclick="redirect(this)" data-title="MEMORIES">MEMORIES ❤️</p>
+        <p class="redi" onclick="redirect(this)" data-title="STORIES">STORIES 😊</p>
+        <p class="redi" onclick="redirect(this)" data-title="ADVENTURE">ADVENTURE 🚀</p>
         
         <h2>Add Elements</h2>
         <button class="button" onclick="showTextInput()">Add Text</button>
@@ -35,16 +32,14 @@
         </select>
         <button class="button" onclick="addEmoji()">Add Emoji</button>
 
-        <!-- Text Input -->
         <div id="textInputContainer">
             <input type="text" id="textInput" placeholder="Enter text here">
             <button class="button" onclick="addText()">Submit</button>
         </div>
     </div>
     
-    <div class="canvas" id="canvas"></div>
-
-    <script src="canva-clone/script-for-canvas.js"></script>
+    <div class="canvas" id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div>
+    
+    <script src="script.js" ></script>
 </body>
-
 </html>

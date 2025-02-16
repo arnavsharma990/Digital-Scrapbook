@@ -11,6 +11,76 @@ body {
   min-height: 100vh; 
 }
 
+.navbarlist {
+  list-style-type: none;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  margin: 0px;
+  padding: 10px 15px;
+  justify-content: right;
+  position: relative;
+  right: 40px;
+  letter-spacing: 2px;
+  font-size: 35px;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+  margin-top: -78px;
+}
+
+.navbar {
+  background-color: black;
+  border: 1px solid black;
+  align-items: center;
+  border-radius: 50px;
+  margin: 10px 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 40px;
+  width: 97%;
+  padding: 8px;
+  justify-content: space-between; 
+}
+
+.logoinnav {
+  border-radius: 50px;
+  position: relative;
+  top: -5px;
+  height: 53px;
+  margin-left: 0;
+}
+
+.navitem {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  margin-top: 10px;
+}
+
+.navitem::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.3s ease;
+}
+
+.navitem:hover::after { width: 100%; }
+.navitem:hover { color: orange; }
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+
 .subheading{
   color: #ffcc00;
 }

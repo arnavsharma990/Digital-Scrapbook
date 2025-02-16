@@ -2,11 +2,14 @@ function showTextInput() {
     console.log("Show Text Input function called"); // Debugging
     document.getElementById("textInputContainer").style.display = "block";
 }
-function redirect(){
-    let text=document.getElementsByClassName("redi").value;
-    let heading=document.getElementsByClassName("heading");
-    heading.textContent=text;
+function redirect(element) {
+    let text = element.getAttribute("data-title"); // Get template name
+    let heading = document.querySelector(".heading"); // Select first heading
+    if (heading) {
+        heading.textContent = text;
+    }
 }
+
 function addText() {
     let inputText = document.getElementById("textInput").value;
     let text = document.createElement("p");

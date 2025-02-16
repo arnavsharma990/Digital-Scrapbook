@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     animation: fadeInBody 15s ease-out;
@@ -11,7 +11,7 @@ header {
     top: 0px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 10px;
     background-color: rgb(19, 10, 19);
     border-bottom: 1px solid #ddd;
@@ -22,7 +22,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
     color: white;
 }
 
@@ -34,8 +34,11 @@ header {
 }
 
 .button-container button img {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+}
+#logo{
+    border-radius: 15px;
 }
 
 form {
@@ -44,18 +47,23 @@ form {
     gap: 10px;
     margin-left: auto;
 }
+#search{
+    width : 300px;
+    font-size: 16px;
+    padding : 10px 10px;
+}
 
 .search-button {
     background: none;
-    border: 2px solid purple;
+    border: 2px solid #6100ff;
     border-radius: 50%;
-    padding: 5px;
+    padding: 5px 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
 }
 
 .search-button img {
@@ -130,15 +138,14 @@ form input {
 .profile-section {
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-left: 20px; 
 }
 
 .profile-section img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%; 
-    border: 2px solid purple; 
+     
 }
 
 .profile-section span {
@@ -161,7 +168,9 @@ form input {
     }
 }
 
-
+.profile-section img:hover{
+    animation: popIn 0.3s ease-out;
+}
 #apps-button:hover {
     animation: popIn 0.3s ease-out;
 }
@@ -183,8 +192,7 @@ form input {
     padding: 15px 30px; 
     font-size: 25px;
     color: white;
-    background-color: purple; 
-    border: 2px solid white; 
+    background-color: #6100ff; 
     border-radius: 10px; 
     text-decoration: none; 
    
@@ -198,4 +206,9 @@ form input {
     background-color:rgba(161, 123, 42, 0.1); 
     transform: translateY(-2px); 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 1); 
+}
+
+.box:hover{
+    width: 400px;
+    height: 300px;
 }

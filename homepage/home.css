@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -64,6 +64,7 @@ a{
     border : 3px solid #6100ff;
     padding: 0px 0px;
     box-shadow: #6100ff 0px 5px 15px;
+    
    
 }
 .opt-btn2{
@@ -97,3 +98,29 @@ a{
     box-shadow: #6100ff 0px 5px 15px;
 }
   
+@keyframes popIn {
+  0% {
+      transform: scale(0.8);
+      opacity: 0.7; 
+  }
+  50% {
+      transform: scale(1.2); 
+      opacity: 1; 
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.opt-btn1:hover{
+  animation: popIn 0.5s ease-out;
+}
+.opt-btn2:hover{
+  animation: popIn 0.5s ease-out;
+}
+.opt-btn3:hover{
+  animation: popIn 0.5s ease-out;
+}
+.opt-btn4:hover{
+  animation: popIn 0.5s ease-out;
+}

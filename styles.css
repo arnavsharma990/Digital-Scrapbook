@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 18px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: linear-gradient(rgb(89, 22, 161) 0%, rgb(63, 16, 114) 100%);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(rgb(109, 42, 181) 0%, rgb(83, 36, 134) 100%);
+}
+
+.canvas {
+    flex-grow: 1;
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.element {
+    margin: 10px;
+    font-size: 24px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#textInputContainer {
+    display: none; 
+    margin-top: 10px;
+}
+
+#textInput {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.button2 {
+    display: block;
+    width: 92%;
+    padding: 10px;
+    margin: 5px 0;
+    background: linear-gradient(rgb(89, 22, 161) 0%, rgb(63, 16, 114) 100%);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+option{
+    text-align: center;
+}
+#textInputContainer{
+     display: none;
+}
+#fileInput{
+    display: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="heading">Templates</h2>
+        <p><img src="broken-link.png" alt="Template 1" class="redi"onclick="redirect()"> <a href="http://127.0.0.1:3000/index.html">MEMORIES</a></p>
+        <p><img src="broken-link.png" alt="Template 2"class="redi"> Template 2</p>
+        <p><img src="broken-link.png" alt="Template 3"class="redi"> Template 3</p>
+        
+        <h2>Add Elements</h2>
+        <button class="button" onclick="showTextInput()">Add Text</button>
+        <label for="fileInput" class="button2">Add Image</label>
+        <input type="file" accept="image/*" id="fileInput" onchange="addImage(event)">
+        
+        <h2>Select Emoji</h2>
+        <select id="emojiSelector">
+            <option value="😊">😊 Smiley</option>
+            <option value="😂">😂 Laugh</option>
+            <option value="❤️">❤️ Heart</option>
+            <option value="🔥">🔥 Fire</option>
+            <option value="🚀">🚀 Rocket</option>
+            <option value="🎉">🎉 Party</option>
+        </select>
+        <button class="button" onclick="addEmoji()">Add Emoji</button>
+
+        <!-- Text Input -->
+        <div id="textInputContainer">
+            <input type="text" id="textInput" placeholder="Enter text here">
+            <button class="button" onclick="addText()">Submit</button>
+        </div>
+    </div>
+    
+    <div class="canvas" id="canvas"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

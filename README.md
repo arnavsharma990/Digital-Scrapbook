@@ -34,16 +34,6 @@
 # Clone the repository
 git clone https://github.com/your-username/digital-scrapbook.git
 cd digital-scrapbook
-
-# Install dependencies (for both frontend & backend)
-npm install
-
-# Start the development server
-npm start
-```
-
-_For backend setup, check the `server` folder._
-
 ---
 
 ## 📸 Screenshots

@@ -34,7 +34,10 @@
 # Clone the repository
 git clone https://github.com/your-username/digital-scrapbook.git
 cd digital-scrapbook
+```
 ---
+
+
 
 ## 📸 Screenshots
 
@@ -45,7 +48,7 @@ cd digital-scrapbook
 
 
 ---
-
+```bash
 ## 🤝 Contributing
 1. **Fork** the repository.
 2. **Clone** your forked repo.
@@ -53,7 +56,7 @@ cd digital-scrapbook
 4. Commit your changes: `git commit -m "Added a cool feature"`
 5. Push to your fork: `git push origin feature-name`
 6. Open a **Pull Request**!
-
+```
 ---
 
 ## 📜 License

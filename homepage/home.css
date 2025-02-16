@@ -15,7 +15,7 @@ a {
 }
 
 .navbar {
-  width: 100%;
+  width: 95%;
   height: 70px;
   margin: 10px 3px;
   background-color: #04010f;
@@ -33,7 +33,7 @@ a {
 .logo-search-container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 #logo {
@@ -45,7 +45,7 @@ a {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  max-width: 480px;
+  max-width: 300px;
 }
 
 #search {
@@ -81,6 +81,7 @@ a {
   align-items: center;
   color: white;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .button-container button {

@@ -16,6 +16,8 @@ header {
     background-color: rgb(19, 10, 19);
     border-bottom: 1px solid #ddd;
     z-index: 1000;
+    justify-content: flex-start;
+    width: 95%;
 }
 
 .button-container {
@@ -38,7 +40,9 @@ header {
     height: 35px;
 }
 #logo{
-    border-radius: 15px;
+    border-radius: 40px;
+    height: 70px;
+    padding-top: 10px;
 }
 
 form {
@@ -183,9 +187,7 @@ form input {
 #template-button:hover {
     animation: popIn 0.3s ease-out; 
 }
-#logo {
-    transform: translate(440px, 0px);
-}
+
 .styled-button {
     display: inline-block; 
     margin: 20px;
@@ -195,7 +197,6 @@ form input {
     background-color: #6100ff; 
     border-radius: 10px; 
     text-decoration: none; 
-   
     transition: all 0.3s ease; 
     -webkit-text-stroke-width: 0.7px; 
     -webkit-text-stroke-color: black; 

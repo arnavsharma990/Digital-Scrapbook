@@ -79,3 +79,4 @@ canvas.addEventListener("drop", (event) => {
         reader.readAsDataURL(file);
     }
 });
+

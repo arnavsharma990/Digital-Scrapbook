@@ -18,6 +18,9 @@ body {
     letter-spacing: 2px;
     font-size: 35px;
 }
+.navitem1{
+    opacity: 0;
+}
 
 nav ul li {
     margin-left: 20px;

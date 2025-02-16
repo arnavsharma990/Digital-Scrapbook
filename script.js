@@ -53,16 +53,16 @@ const canvas = document.getElementById("canvas");
 
 canvas.addEventListener("dragover", (event) => {
     event.preventDefault();
-    
+    canvas.classList.add("drag-over");
 });
 
 canvas.addEventListener("dragleave", () => {
-    
+    canvas.classList.remove("drag-over");
 });
 
 canvas.addEventListener("drop", (event) => {
     event.preventDefault();
-    
+    canvas.classList.remove("drag-over");
 
     const file = event.dataTransfer.files[0];
     if (file && file.type.startsWith("image/")) {
@@ -73,7 +73,7 @@ canvas.addEventListener("drop", (event) => {
             img.style.maxWidth = "50vw";
             img.style.maxHeight = "50vh";
             img.style.margin = "5px";
-            // img.classList.add("draggable");
+            img.classList.add("draggable");
             canvas.appendChild(img);
         };
         reader.readAsDataURL(file);

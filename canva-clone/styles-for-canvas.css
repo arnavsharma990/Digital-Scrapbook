@@ -90,3 +90,6 @@ option{
 #fileInput{
     display: none;
 }
+.redi:hover{
+    cursor: pointer;
+}

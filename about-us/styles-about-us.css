@@ -22,6 +22,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    font-family: "Comfortaa", sans-serif;
 }
 
 body::before {

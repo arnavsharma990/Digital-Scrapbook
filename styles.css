@@ -18,9 +18,22 @@ body {
     font-size: 18px;
 }
 
-.button, .button2 {
+.button{
     display: block;
     width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: linear-gradient(rgb(89, 22, 161) 0%, rgb(63, 16, 114) 100%);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.button2 {
+    display: block;
+    width: 92%;
     padding: 10px;
     margin: 5px 0;
     background: linear-gradient(rgb(89, 22, 161) 0%, rgb(63, 16, 114) 100%);

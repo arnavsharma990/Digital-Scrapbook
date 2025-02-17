@@ -212,6 +212,9 @@ form input {
 }
 
 .box:hover{
-    width: 400px;
-    height: 300px;
+    animation: bahar 2s ease-in-out;
+}
+@keyframes bahar {
+    from{scale: 1;}
+    to{scale: 1.2;}
 }

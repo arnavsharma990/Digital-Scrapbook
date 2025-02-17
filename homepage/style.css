@@ -211,3 +211,10 @@ form input {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 1); 
 }
 
+.box:hover{
+    animation: bahar 2s ease-in-out;
+}
+@keyframes bahar {
+    from{scale: 1;}
+    to{scale: 1.2;}
+}

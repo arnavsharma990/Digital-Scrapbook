@@ -18,7 +18,7 @@ body {
     font-size: 18px;
 }
 
-.button {
+.button, .button3, .button4 {
     display: block;
     width: 100%;
     padding: 10px;
@@ -32,7 +32,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.button:hover {
+.button:hover,.button3:hover, .button4:hover {
     background: linear-gradient(rgb(109, 42, 181) 0%, rgb(83, 36, 134) 100%);
 }
 
@@ -79,7 +79,6 @@ select {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-
 
 option{
     text-align: center;

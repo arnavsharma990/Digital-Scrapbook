@@ -182,6 +182,10 @@ footer {
   width: 100%;
 }
 
+footer p{
+  color: white;
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -205,12 +205,6 @@ summary:hover {
 }
 
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.3);
-  font-size: 14px;
-}
 .plan-business{
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
@@ -243,6 +237,12 @@ footer {
   padding: 60px 80px 20px;
   margin-top: 80px;
   width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p{
+  color: white;
 }
 
 .footer-content {

@@ -211,7 +211,3 @@ form input {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 1); 
 }
 
-.box:hover{
-    width: 400px;
-    height: 300px;
-}

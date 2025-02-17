@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    padding-top: 60px;
 }
 
 .sidebar {
@@ -94,3 +95,42 @@ select {
 .redi {
     cursor: pointer;
 }
+.navbar {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(89, 22, 161), rgb(63, 16, 114));
+    color: white;
+    padding: 15px 20px;
+    z-index: 1000; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;   
+}
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+

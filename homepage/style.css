@@ -8,16 +8,17 @@ body {
 
 header {
     position: sticky;
+    left : 22px;
     top: 0px;
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 10px;
+    padding: 10px 10px;
     background-color: rgb(19, 10, 19);
     border-bottom: 1px solid #ddd;
     z-index: 1000;
     justify-content: flex-start;
-    width: 95%;
+    width: 100%;
 }
 
 .button-container {
@@ -40,9 +41,10 @@ header {
     height: 35px;
 }
 #logo{
-    border-radius: 40px;
+    border-radius: 30px;
     height: 70px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 form {
@@ -66,7 +68,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
+    width: 50px;
     height: 45px;
 }
 
